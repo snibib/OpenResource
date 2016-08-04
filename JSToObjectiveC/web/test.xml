@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/css" href="test.css"?>
+<note>
+<to>Yang</to>
+<from>han</from>
+<heading>Reminder</heading>
+<body>Don't forget the metting!</body>
+</note>

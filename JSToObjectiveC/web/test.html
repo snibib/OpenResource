@@ -1,0 +1,35 @@
+<html>
+	<header>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<script type="text/javascript">
+			function showAlert(message) {
+				alert(message);
+			}
+
+			function loadURL(url) {
+				var iFrame;
+				iFrame = document.createElement("iFrame");
+				iFrame.setAttribute("src",url);
+				iFrame.setAttribute("style","display:none;");
+				iFrame.setAttribute("height","0px");
+				iFrame.setAttribute("width","0px");
+				iFrame.setAttribute("frameborder","0");
+				document.body.appendChild(iFrame);
+				iFrame.parentNode.removeChild(iFrame);
+				iFrame = null;
+			}
+
+			function firstClick() {
+				loadURL("firstClick://shareClick?title=hello&content=world&url='http://www.dmall.com'");
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="./test.css">
+	</header>
+
+	<body>
+		<h2>this is the first way</h2>
+		<br />
+		<br />
+		<button type="button" onclick="firstClick()">Click me</button>
+	</body>
+</html>
