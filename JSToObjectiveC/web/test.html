@@ -20,8 +20,12 @@
 			}
 
 			function firstClick() {
-				loadURL("firstClick://shareClick?title=hello&content=world&url='http://www.dmall.com'");
+				loadURL("firstclick://shareClick?title=hello&content=world&url=http://www.dmall.com");
 			}
+        
+            function secondClick() {
+                share('good','good way','http://www.dmall.com');
+            }
 		</script>
 		<link rel="stylesheet" type="text/css" href="./test.css">
 	</header>
@@ -31,5 +35,10 @@
 		<br />
 		<br />
 		<button type="button" onclick="firstClick()">Click me</button>
+        
+        <h2>this is the second way</h2>
+        <br />
+        <br />
+        <button type="button" onclick="secondClick()">Click me</button>
 	</body>
 </html>

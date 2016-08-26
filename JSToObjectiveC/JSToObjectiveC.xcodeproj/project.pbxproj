@@ -14,6 +14,10 @@
 		1CFD8EB61D49A0DF00FE110E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CFD8EB51D49A0DF00FE110E /* Assets.xcassets */; };
 		1CFD8EB91D49A0DF00FE110E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFD8EB71D49A0DF00FE110E /* LaunchScreen.storyboard */; };
 		1CFD8EC41D49A0E000FE110E /* JSToObjectiveCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFD8EC31D49A0E000FE110E /* JSToObjectiveCUITests.m */; };
+		1CFD8ED21D49A21700FE110E /* test.css in Resources */ = {isa = PBXBuildFile; fileRef = 1CFD8ECF1D49A21700FE110E /* test.css */; };
+		1CFD8ED31D49A21700FE110E /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 1CFD8ED01D49A21700FE110E /* test.html */; };
+		1CFD8ED41D49A21700FE110E /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1CFD8ED11D49A21700FE110E /* test.xml */; };
+		1CFD8ED61D49AD9E00FE110E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CFD8ED51D49AD9E00FE110E /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		1CFD8EBF1D49A0E000FE110E /* JSToObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSToObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CFD8EC31D49A0E000FE110E /* JSToObjectiveCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSToObjectiveCUITests.m; sourceTree = "<group>"; };
 		1CFD8EC51D49A0E000FE110E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CFD8ECF1D49A21700FE110E /* test.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = test.css; sourceTree = "<group>"; };
+		1CFD8ED01D49A21700FE110E /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		1CFD8ED11D49A21700FE110E /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
+		1CFD8ED51D49AD9E00FE110E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CFD8ED61D49AD9E00FE110E /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,8 @@
 		1CFD8E9D1D49A0DF00FE110E = {
 			isa = PBXGroup;
 			children = (
+				1CFD8ED51D49AD9E00FE110E /* JavaScriptCore.framework */,
+				1CFD8ECE1D49A21700FE110E /* web */,
 				1CFD8EA81D49A0DF00FE110E /* JSToObjectiveC */,
 				1CFD8EC21D49A0E000FE110E /* JSToObjectiveCUITests */,
 				1CFD8EA71D49A0DF00FE110E /* Products */,
@@ -109,6 +120,16 @@
 				1CFD8EC51D49A0E000FE110E /* Info.plist */,
 			);
 			path = JSToObjectiveCUITests;
+			sourceTree = "<group>";
+		};
+		1CFD8ECE1D49A21700FE110E /* web */ = {
+			isa = PBXGroup;
+			children = (
+				1CFD8ECF1D49A21700FE110E /* test.css */,
+				1CFD8ED01D49A21700FE110E /* test.html */,
+				1CFD8ED11D49A21700FE110E /* test.xml */,
+			);
+			path = web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +215,9 @@
 				1CFD8EB91D49A0DF00FE110E /* LaunchScreen.storyboard in Resources */,
 				1CFD8EB61D49A0DF00FE110E /* Assets.xcassets in Resources */,
 				1CFD8EB41D49A0DF00FE110E /* Main.storyboard in Resources */,
+				1CFD8ED41D49A21700FE110E /* test.xml in Resources */,
+				1CFD8ED31D49A21700FE110E /* test.html in Resources */,
+				1CFD8ED21D49A21700FE110E /* test.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

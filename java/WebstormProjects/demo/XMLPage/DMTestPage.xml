@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<View xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="View.xsd" layout="vertical"
+      background="#0000FF" height="54dp">
+
+      <Script src="/DMAppFramework.js"/>
+      <Script src="DMTestPage.js"/>
+
+      <TextView id="textView" width="fill" height="fill" contentGravity="center" text="测试界面"
+                fontColor="#00000000" fontSize="22dp"/>
+    <TextView width="fill" height="fill" contentGravity="center">
+
+    </TextView>
+</View>

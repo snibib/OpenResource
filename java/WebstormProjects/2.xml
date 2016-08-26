@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<View xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="../../View.xsd" layout="vertical"
+      background="#e5e5e5" height="fill">
+
+    <Script src="/DMAppFramework.js"/>
+    <Script src="DMHelpPage.js"/>
+    <View   height="64dp" background="#ffffff" width="fill" layout="vertical">
+        <View height="63dp" width="fill" layout="frame">
+            <TextView   marginTop="24dp" background="#ffffff"   text="帮助中心" fontSize="16" contentGravity="center"/>
+        </View>
+        <View   height="1dp" background="#dddddd" width="fill"/>
+    </View>
+
+
+<ListView id="listView" layout="vertical" data="${list}" height="fill" background="#e5e5e5">
+    <View match="${type}==1"  onClick="onCellClick(${text})" width="fill" height="50dp" layout="frame" background="#ffffff">
+        <TextView text="${text}" fontColor="#222222" marginLeft="15dp" width="wrap" fontSize="14" contentGravity="center"/>
+        <View marginRight="15dp"  height="wrap" width="wrap" gravity="right|centerVertical" background="#ffffff" layout="vertical">
+            <TextView text="${tel}"  width="wrap" height="wrap" fontSize="14dp" fontColor="#ff000000"></TextView>
+            <TextView text="${time}" width="wrap" height="wrap" fontSize="12dp" fontColor="#ff000000"></TextView>
+        </View>
+    </View>
+    <View match="${type}==2"  onClick="onCellClick(${text})" width="fill" height="50dp" layout="frame" background="#ffffff">
+        <TextView text="${text}" fontColor="#222222" marginLeft="15dp" width="wrap" fontSize="14" contentGravity="center"/>
+        <ImageView src="/Dmall/Entry/Images/GrayRightArrow.png"  marginRight="15dp"  height="12dp" width="wrap" gravity="right|centerVertical"/>
+    </View>
+</ListView>
+    
+</View>
